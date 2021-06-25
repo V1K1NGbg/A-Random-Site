@@ -1,0 +1,106 @@
+:root {
+  --color1: #ffffff;
+  --color2: #ffffff;
+  --color3: #ffffff;
+  --color4: #ffffff;
+  --color5: #ffffff;
+}
+
+body {
+  background-color: var(--color1);
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+h1 {
+  color: var(--color5);
+  text-align: center;
+  float: right;
+  margin-top: 0;
+}
+p {
+  font-size: 100px;
+  text-align: center;
+  color: var(--color5);
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border-radius: 30px;
+} 
+#open {
+  font-size:30px;
+  cursor:pointer;
+  border-radius: 12px;
+  background-color: var(--color2);
+  border: none;
+  color: var(--color5);
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: left;
+}
+#open:hover {
+  box-shadow: 0 12px 16px 0 var(--color5),0 17px 50px 0 var(--color5);
+}
+#nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--color2);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--color3);
+  display: block;
+  transition: 0.3s;
+}
+
+#nav a:hover {
+  color: var(--color4);
+}
+
+#nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  #nav {padding-top: 15px;}
+  #nav a {font-size: 18px;}
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
